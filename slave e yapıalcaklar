@@ -14,3 +14,4 @@ Set-NetConnectionProfile -InterfaceIndex 12 -NetworkCategory Private  (public is
 
 
 Start-Service WinRM  winram çalışmazsa tekrar yaz 
+
