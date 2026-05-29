@@ -1,0 +1,16 @@
+slav/ client da PowerShell Yönetici olarak çalıştır
+Enable-PSRemoting -Force              yaz 
+
+Bu komut şunları yapar:
+WinRM servisini açar
+Uzaktan PowerShell bağlantısını aktif eder
+Gerekli firewall kurallarını ekler
+PowerShell session endpoint'lerini hazırlar  
+
+5. Ağ profilini Private yap
+Get-NetConnectionProfile   
+Set-NetConnectionProfile -InterfaceIndex 12 -NetworkCategory Private  (public ise private yap )
+****Buradaki 12 sende farklı olabilir. Get-NetConnectionProfile çıktısında hangi InterfaceIndex yazıyorsa onu kullanacaksın.
+
+
+Start-Service WinRM  winram çalışmazsa tekrar yaz 
