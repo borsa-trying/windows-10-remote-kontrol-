@@ -1,0 +1,18 @@
+komutlar 
+Windows 10 bilgisayarda yönetici PowerShell:
+
+Enable-PSRemoting -Force
+
+Windows 11 bilgisayardan bağlantı:
+
+Enter-PSSession -ComputerName 192.168.1.34 -Credential WINDOWS10_KULLANICI_ADI
+
+Bağlanınca sanki diğer bilgisayarın PowerShell’ine girmiş gibi komut yazarsın.
+
+Örnek:
+
+hostname
+ipconfig
+dir C:\
+
+Bu, “komut satırından diğer bilgisayarı yönetme” için çok daha profesyonel bir yöntemdir.
