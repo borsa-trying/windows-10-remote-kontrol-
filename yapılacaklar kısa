@@ -1,0 +1,38 @@
+
+
+Windows 10 PC  →  uzaktan bağlanmak istediğin bilgisayar
+1. PowerShell Remoting ile ne yapabiliriz MHİ 
+
+Bağlandıktan sonra Windows 10 bilgisayarda şunları yapabilirsin:
+hostname
+
+Bilgisayar adını gör
+ipconfig
+
+IP bilgilerini gör
+
+Get-Process
+
+Çalışan uygulamaları/processleri
+Get-Service
+
+Servisleri gör
+dir C:\
+
+C diskini listelersin.
+mkdir C:\TestKlasoru
+
+Klasör oluştur
+Remove-Item C:\TestKlasoru
+
+Klasör/dosya sil
+Restart-Computer
+
+Diğer bilgisayarı yeniden başlatabilirsin. ****************
+shutdown /s /t 60
+
+Diğer bilgisayarı 60 saniye içinde kapatabilirsin.
+
+
+
+.... MHİ ........
